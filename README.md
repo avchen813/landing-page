@@ -1,1 +1,1 @@
-# landing-page
+Building a pre-designed landing page with provided color and font styles.

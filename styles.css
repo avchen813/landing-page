@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a, a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+}
+
+/* background colors for sections */
+
+.section.header, .section.hook {
+    background-color: #1F2937;
+}
+
+.section.info {
+
+}
+
+.section.testimonials {
+    background-color: #E5E7EB;
+}
+
+.section.footer {
+
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2% 10%;
+}
+
+
+/* header section */
+
+
+.content.header, .content.hook {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-link {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+
+/* hook section */
+
+
+.hook-text, .hook-image {
+    display: flex;
+    width: 50%;
+    flex: 1;
+    padding: 40px 0;
+}
+
+.hook-text {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hook-image {
+    background-color: lightgray;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;   
+}
+
+.sign-up {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 6px 24px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* info section */
+
+.info-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.info-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info-group {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-group img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+}
+
+
+
+.info-group-text {
+    text-align: center;
+}
+
+
+/* testimonials */
+
+
+.content.testimonials {
+    color: #1F2937;
+}
+
+.testimonial-quote {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.testimonial-user {
+    text-align: end;
+}
+
+
+/* cta */
+
+.content.cta {
+    background-color: #3882F6;
+    border-radius: 20px;
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+    margin: 40px auto;
+}
+
+.cta-button.sign-up {
+    border-color: #F9FAF8;
+    margin-left: auto;
+}
