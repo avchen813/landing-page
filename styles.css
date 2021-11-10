@@ -23,7 +23,7 @@ h1 {
 
 /* background colors for sections */
 
-.section.header, .section.hook {
+.section.header, .section.hook, .section.footer {
     background-color: #1F2937;
 }
 
@@ -47,6 +47,7 @@ h1 {
 
 
 /* header section */
+
 
 
 .content.header, .content.hook {
@@ -75,21 +76,26 @@ h1 {
 
 /* hook section */
 
+.content.hook {
+    gap: 40px;
+    align-items: center;
+}
 
 .hook-text, .hook-image {
     display: flex;
     width: 50%;
     flex: 1;
-    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.hook-image img {
+    width: inherit;
+    
 }
 
 .hook-text {
     flex-direction: column;
     align-items: flex-start;
-}
-
-.hook-image {
-    background-color: lightgray;
 }
 
 .main-text {
@@ -98,7 +104,7 @@ h1 {
     color: #F9FAF8;
 }
 
-.secondary-text {
+.secondary-text, .footer-message {
     font-size: 18px;
     color: #E5E7EB;   
 }
@@ -153,6 +159,8 @@ h1 {
 
 .content.testimonials {
     color: #1F2937;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 .testimonial-quote {
@@ -175,10 +183,24 @@ h1 {
     display: flex;
     align-items: center;
     padding: 2% 4%;
-    margin: 40px auto;
+    margin: 80px auto;
+    width: min(1000px, 80%);
+}
+
+.cta-message {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .cta-button.sign-up {
     border-color: #F9FAF8;
     margin-left: auto;
+}
+
+
+/* footer */
+
+.content.footer {
+    text-align: center;
+    padding: 0;
 }
